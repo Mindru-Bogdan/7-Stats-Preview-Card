@@ -1,0 +1,63 @@
+.backgroundMobile {
+    display: block;
+    position: fixed;
+    height: 200px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -150px;
+    border-top-left-radius: 10px;  
+    border-top-right-radius: 10px;
+    mix-blend-mode: multiply ;
+    opacity: 0.8;
+}
+
+.backgroundDesktop {
+    display: block;
+    position: fixed;
+    height: 550px;
+    width: 700px;
+    left: 50%;
+    top: 50%;
+    margin-top: -275px;
+    border-top-right-radius: 10px;  
+    border-bottom-right-radius: 10px;
+    mix-blend-mode: multiply ;
+    opacity: 0.8;
+}
+
+@media all and (max-width: 1439px) {
+    .backgroundDesktop {display: none;}
+    .backgroundMobile {display: block;}
+    .backgroundImg {
+        position: fixed;
+        height: 200px;
+        width: 300px;
+        top: 50%;
+        left: 50%;
+        margin-top: -300px;
+        margin-left: -150px;
+        border-top-left-radius: 10px;  
+        border-top-right-radius: 10px;
+        background-color: rgba(168, 88, 218, 1);
+        z-index: -1;
+    }
+}
+
+@media all and (min-width: 1440px) {
+    .backgroundDesktop {display: block;}
+    .backgroundMobile {display: none;}
+    .backgroundImg {
+        position: fixed;
+        height: 550px;
+        width: 700px;
+        left: 50%;
+        top: 50%;
+        margin-top: -275px;
+        border-top-right-radius: 10px;  
+        border-bottom-right-radius: 10px;
+        background-color: rgba(168, 88, 218, 1);
+        z-index: -1;
+    }
+}
